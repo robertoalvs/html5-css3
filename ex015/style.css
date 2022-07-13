@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: wheat;
+}
+
+h1 {
+    color: blue;
+    font-size: 36px;
+}
+ol {
+  font-family: fantasy;  
+}
+li {
+    font-size: 26px;
+    color: darkorchid;
+
+}
+p {
+    text-align: justify;
+}
+
+ul {
+
+    font-family: monospace;
+    color: rgb(136, 14, 236);
+}

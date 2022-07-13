@@ -1,0 +1,137 @@
+
+:			:
+: USANDO ID COM CSS3	:
+:			:
+
+
+
+@charset "UTF-8";
+
+body{
+
+    background-color: rgba(255, 228, 196, 0.548);
+}
+h1#principal{
+
+    color: blue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.basico{
+
+    color: rgb(44, 176, 180);
+    text-decoration: underline;
+}
+
+.intermediario{
+
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.avancado{
+
+    color: rgba(19, 90, 223, 0.822);
+}
+
+
+
+
+
+
+:					:
+: USANDO PSEUDO ELEMENTS  COM CSS3	:
+:					:
+
+
+
+
+
+@charset "UTF-8";
+
+body{
+    background-color: rgba(255, 228, 196, 0.315);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: blueviolet;
+}
+a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+a:active{
+    color: cyan;
+}
+
+a::after{
+
+    content: '[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: lightgrey;
+}   
+
+a::before{
+    content: '[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: lightgrey;
+
+}
+
+
+
+
+
+:					:
+: USANDO PSEUDO CLASSE COM CSS3	:
+:					:
+
+
+
+
+
+
+@charset "UTF-8";
+
+
+body{
+
+    background-color: rgba(255, 228, 196, 0.486);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    display: inline-block;
+    background-color: lightgray;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+div:hover{
+    background-color: yellow;
+}
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+
+}
+

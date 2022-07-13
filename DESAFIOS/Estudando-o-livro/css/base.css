@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+#container {
+
+    background-image: url("../imagens/original-rsa-pc-gamer.png");
+    background-repeat: repeat-y;
+    margin: 20px auto;
+    max-width: 950px;
+    width: 90%;
+    padding: 30px 10px 0px 0px;
+}
+
+#masthead {
+
+    margin-bottom: 30px;
+
+}
+input[type="text"] {
+
+    width: 150px;
+}
+
+#page {
+
+    background: #fff;
+    padding: 10px 10px 10px 0px;
+    max-width: 940px;
+    width: 97.9167%;
+}
+
+
+#main {
+
+    float: left;
+    width: 71%;
+}
+
+.entry {
+
+    margin: 0 .5em 2em 0;
+}
+
+.continued {
+
+    font-style: italic;
+    margin-top: -5px;
+}
+
+.photo {
+
+    float: left;
+    height: 75px;
+    width: 100px;
+}
+
+.intro {
+
+    margin: -5px 0 0 110px;
+}
+
+a:focus,
+a:hover,
+a:active {
+
+    background: #f3cfb6;
+}
+
+.logo a:hover {
+
+    background: transparent;
+}
+
+h1 {
+
+    font-size: 1.5em; 
+    margin-bottom: .75em;
+    text-transform: lowercase;
+}
+
+#related {
+
+    margin-left: 72%;
+}
+
+aside h2 {
+    font-size: .9375em;
+    margin-bottom: 3px;
+    text-transform: lowercase;
+}
+
+.sidebar {
+
+    background: #f5f8fa;
+}
+
+#footer {
+
+    margin-top: 10px;
+}

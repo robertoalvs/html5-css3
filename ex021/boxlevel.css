@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+h1 { /* BOX-LEVEL
+
+
+
+    /* IREMOS UTILIZAR SHOORT-HAND PARA SIMPLIFICAR OS CÓDIGOS ABAIXO*/
+    /*display: inline;*/
+    background-color: lightgrey;
+    height: 200px;
+    width: 200px;
+
+    /*border-width: 10px;
+    border-style: solid;
+    border-color: darkgrey;*/
+    border: 10px solid darkgrey;
+
+    /*padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;*/
+    padding: 10px 10px 10px 10px;
+
+    /*margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;*/
+
+    /*margin: 10px 10px 10px 10px;*/
+        margin: 10px auto 10px auto;
+    
+    /*outline-width: 15px;
+    outline-style: dashed;
+    outline-color: red;*/
+    outline: 15px dashed red;
+}
+
+a { /* INLINE-LEVEL*/
+
+
+    /*border-width: 10px;
+    border-style: solid;
+    border-color: red;*/
+    border: 10px solid red;
+
+    /*padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;*/
+    padding: 10px 10px 10px 10px;
+}   

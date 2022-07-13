@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* Fonte do google*/
+
+@font-face { /* Fonte local */
+
+    font-family: 'android'; /* Nome qualquer para fonte local*/
+    src: url('../fontes/idroid.otf') format('opentype'); /* opentype para tipo de fonte (otf) */
+    font-weight: normal;
+}
+
+
+* { /*  SELETOR COM * É = CONFIGURAÇÃO GLOBAL  - A configuração abaixo tira todas as margens do seu site */
+
+  margin: 0px;
+  padding: 0px;
+
+}
+
+:root { /* PARA CRIAÇÕES DE VARIAVEIS NO CSS */
+
+--cor0: #c5ebd6;
+--cor1: #83e1ab; /* Colocar os ( -- ) e qualquer nome que queira, para criar a variável */
+--cor2: #3ddc84;
+--cor3: #2fa866;
+--cor4: #1a5c37;
+--cor5: #063d1e;
+
+--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+--fonte-destaque: 'Bebas Neue', cursive;
+--fonte-android: 'android', cursive;
+
+}
+
+
+body {
+
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {  /* Cabeçalho */
+
+     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); /* Degrade de baixo para cima */
+     padding-top:  40px; /* Coloca uma margin acima do título H1 */
+     min-height: 150px;  /* Altura Minima do cabeçalho*/
+     text-align: center; /* Centraliza o texto*/
+    
+     
+}
+
+header > p {  /* Paragrafo dentro do cabeçalho */
+
+    font-family: var(--fonte-padrao);
+    color: white;
+    padding-left: 10px; /* Margin para esquerda */
+    padding-right: 10px; /* Margin para Direita */
+    max-width: 600px; /* Largura máxima do paragrafo */ 
+    margin: auto; /* Centraliza o paragrafo */
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+header > h1 { /* H1 dentro do cabeçalho */
+
+    font-size: 3em;
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    margin-bottom: 20px; /* Margin para baixo do título H1 */
+    text-shadow: 7px 5px black; /* Sobra de texto*/
+}
+
+
+nav { /* Navegação ( Menu )  */
+
+    background-color: var(--cor5);
+    box-shadow: 0px 6px 13px 1px rgba(0, 0, 0, 0.383);
+    padding: 10px; /* Margin para cima, baixo, direita e esquerda */ 
+}
+
+nav a { /* Link dentro da navegação ( Menu) */
+
+    color: var(--cor1);
+    font-weight: bold;
+    padding: 10px; /* Margin para cima e para baixo */
+    border-radius: 5px; /* Pequena borda redonda, em cima, baixo, direita e esquerda */
+    text-decoration: none; /* Tira o sublinhado */
+    transition-duration: 0.5s; /* Efeto de transição */
+}
+
+nav a:hover { /* Quando passar o mouse sobre o link */
+
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+a.externo::after { /* Aqui foi criado uma classe externo (::after) - Significa (Depois do (link) no caso do exemplo, é por que estamos aplicando em um link */
+
+    content: '\00A0\1F517'; /* Vai mostrar um emoji cod do emoji (1F517) e o cod do espaço entro o link e o emoji (00A0), não pode esquecer da barra \ */
+}
+
+
+main {
+
+    min-width: 300px; /* Largura mínima */
+    max-width: 1000px; /* Largura máxima */
+    padding: 20px; /* Margin para cima, baixo, direita e esquerda */ 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.525);
+    margin: auto; /* Centraliza tudo do main */
+    background-color: white;
+    margin-bottom: 30px; /* Margin para baixo saindo um pouco do rodapé footer */
+    border-bottom-left-radius: 20px; /* Deixa o canto esquerdo, da parte de baixo, do main arredondado */
+    border-bottom-right-radius: 20px; /* Deixa o canto direito, da parte de baixo, do main arredondado */
+}
+main p { /* Paragrafo dentro Main */
+
+    margin: 15px 0px; /* Margin do paragrafo 15px para cima e para baixo, e 0 para direita e esquerda */
+    text-align: justify; /* Orgazina o texto */
+    text-indent: 30px; /* Afasta um pouco a primeira linha do texto, para direita */
+    line-height: 1.2em; /* Altura da linha do texto, isso separa um pouco o texto de cima para o de baixo */ 
+}
+
+main strong { /* Strong - Negrito dentro do HTML */
+
+    color: var(--cor4); /* Cor do Link*/
+    font-weight: bold; /* Negrito */
+    
+}
+
+main a {  /* Link dentro do Main */
+
+    text-decoration: none; /* Tira o sublianhado do link*/
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px; /* 2px = cima e baixo ---- 6px= esquerda e direita */
+}
+
+main a:hover {  /* Quando passar o mouse sobre o link */
+
+    text-decoration: underline; /* Coloca o sublianhado */
+    color: var(--cor4);
+}
+main h1 {
+
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.3em;
+    text-indent: 8px; /* Afasta um pouco a primeira linha do texto, para direita */
+    background-image: linear-gradient(to right, var(--cor1), transparent ); /* Degrade da direita para a esqerda usando o (TRANSPARENT */
+}
+
+main img {  /* Imagens dentro do main  */
+
+    width: 100%; /* Largura de 100%, faz com que todas as imagem do main, se espremam se ajustando e deixando responsivel */
+}
+
+main img.pequena { /* Classe detro da imagem = class="pequena" */
+
+    max-width: 350px; /* Se você tem um foto de 500px, você pode reduzir o tamanho dela com o max-width */
+    margin: auto; /* centralizar a foto, mais tem que usar se precisar o DISPLAY BLOCK */ 
+    display: block; /* Por padrão uma img não é um bloco, então para centralizar uma imagem usamos o (display: block;) */
+}
+
+
+/* Classe='video' criada para deixar o video centralizado e responsivel */
+
+div.video { 
+
+    background-color: var(--cor5);                                                     
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe {
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+/* TODOS ESSES CODIGOS EM DIV.VIDEO É PARA DEIXAR O VIDEO CENTRALIZADO E RESPONSIVEL */
+
+}
+
+
+aside {
+
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.235);
+}
+
+aside ul {  /* Listas dentro do aside */
+
+        list-style-position: inside; /* Vai deixar a marcação (bolinha do exemplo), para dentro da margin, ele posiciona a marcação da lista */
+        columns: 2; /* Divide a coluna em 2 */ 
+        list-style-type: '\2714\00A0'; /* Aqui você muda o estilo da marcação, escolhendo um emoji no (emojipedia), e colocando o apenas o 2714, o cod original é (U+2714), agora o 00A0 e para dar um espaço entre a marcação da lista, e o texto */
+}
+
+aside h3 {
+
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /* (Aqui temos uma margin -10px por que estamos criando uma margem para fora).....  -10px cima, -10px direita, 0px baixo e -10px esquerda. SÓ QUE FAZENDO ISSO O ASIDE PERDEU O ARREDONDAMENTO EM CIMA, VAMOS CORRIGIR ISSO COM O BORDER-RADIUS*/
+    border-radius: 10px 10px 0px 0px; /* Aqui temos 10px em cima na esquerda, 10px em cima na direita, 0px abaixo na direita  e 0px abaixo na esquerda. */
+}
+
+
+footer {
+
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+footer a {  /* Link do Rodapé */
+
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer a:hover { 
+
+    text-decoration: underline;
+    color: var(--cor1);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos localmente</h1>
+    <p>Este video está em um servidor local</p>
+
+    <video width="300" poster="imagens/thumb.jpg" controls autoplay loop>
+
+        <source src="midia/The break fast club.mp4" type="video/mp4">
+        <source src="midia/The Break Fast Club.m4v" type="video/m4v">
+        <source src="midia/The Break Fast Club.webm" type="video/webm">
+    </video>
+    <p>Caso seu navegador não tenha suporte para reproduzir esse vídeo <br> Você pode baixar ele clicando <a href="midia/The break fast club.mp4" target="_blank" download="midia/The break fast club" type="aplication/mp4">aqui</a></p>
+
+    <h1>Video do Youtube</h1>
+
+    <iframe width="300" height="215" src="https://www.youtube.com/embed/n8bSEgm4mf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>TOP!</p>
+</body>
+</html>

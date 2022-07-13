@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(222, 184, 135, 0.678);
+}
+
+h1#principal{
+    background-color: rgba(27, 190, 190, 0.336);
+    text-align: center;
+}
+
+.junior{
+    color: blue;
+    /*text-align: right;*/
+}
+
+.nivel1{
+
+    background-color: rgba(165, 42, 42, 0.205);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.senior{
+
+    color: rgb(235, 8, 8);
+    font-size: 2em;
+}
+
+.mestre{
+
+    background-color: azure;
+    text-align: end;
+    text-decoration: underline;
+}
+
+.destaque{
+
+    color: green;
+}

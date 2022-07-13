@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="br.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imangens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos deiferentes ou <br>simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="img flexível">
+    </picture>
+
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <!--<audio src="midia/01 Estoy Aquí.mp3" controls autoplay></audio>-->
+
+        <audio preload="metadata" autoplay controls loop>
+                <source src="midia/01 Estoy Aquí.mp3" type="audio/mp3">
+                <source src="midia/01 Estoy Aquí.ogg" type="audio/ogg">
+                <source src="midia/01 Estoy Aquí.wav" type="audio/wav">
+        </audio>
+            
+        <p>Caso o seu áudio não seja reproduzido automaticamete, você pode baixar clicando <a href="midia/01 Estoy Aquí.mp3" download="midia/01 Estoy Aquí.mp3" target="_blank" type="aplication/mp3">aqui</a></p>
+</html>

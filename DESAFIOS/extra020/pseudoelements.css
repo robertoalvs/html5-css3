@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(255, 228, 196, 0.315);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: blueviolet;
+}
+a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+a:active{
+    color: cyan;
+}
+
+a::after{
+
+    content: '[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: lightgrey;
+}   
+
+a::before{
+    content: '[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: lightgrey;
+
+}
