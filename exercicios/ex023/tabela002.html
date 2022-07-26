@@ -5,108 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
-
-    <style>
-
-        body {
-
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        table {
-
-            width: 500px;
-            height: 10px;
-            border-collapse: collapse;
-            
-        }
-
-        thead {
-
-            background-color: lightgray;
-            color: red;
-
-        }
-
-        td, th {
-
-            border: 1px solid black;
-            padding: 10px;
-            
-        }
-
-        .num {
-
-            text-align: right;
-            
-        }
-        .posicao {
-
-            text-align: center;
-        }
-    
-
-        tfoot {
-
-            padding: 10px;
-            background-color: lightgrey;
-        }
-
-        .footestado {
-
-            text-align: center;
-        }
-
-        .footnum {
-
-            text-align: right;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="../ex023/css/tabela.css">
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
 
-    <table>
-        <thead>
-            <th class="posicao1">Posição</th>
-            <th>Unidade Federativa</th>
-            <th>População</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="posicao">1</td>
-                <td>São Paulo</td>
-                <td class="num">46 649 132</td>
-            </tr>
-            <tr>
-                <td class="posicao">2</td>
-                <td>Minas Gerais</td>
-                <td class="num">21 411 923</td>
-            </tr>
-            <tr>
-                <td class="posicao">3</td>
-                <td>Rio de Janeiro</td>
-                <td class="num">17 463 349</td>
-            </tr>
-            <tr>
-                <td class="posicao">4</td>
-                <td>Bahia</td>
-                <td class="num">14 985 284</td>
-            </tr>
-            <tr>
-                <td class="posicao">5</td>
-                <td>Paraná</td>
-                <td class="num">11 597 484</td>
-            </tr>
-        </tbody>
+        <h1>Uso de tabelas grandes</h1>
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 290px;">Unidade Federativa</th>
+                    <th scope="col">População 2021</th>
+                </tr>
+            </thead>
 
-        <tfoot>
-            <th class="posicao2"><strong>Total de Habitantes</strong></th>
-            <td class="footestado"><strong>Total no Brasil</strong></td>
-            <td class="footnum"><strong>100 569 430</strong></td>
-        </tfoot>
-    </table>
+            <tbody>
+
+                <tr>
+                    <td><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank">São Paulo</a></td>
+                    <td class="num" id="sp">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td><a href="https://pt.wikipedia.org/wiki/Para%C3%ADba" target="_blank">Paraíba</a></td>
+                    <td class="num" id="pb">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Alagos</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Segipe</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">Total da Polulação do Brasil</th>
+                    <td class="numfoot"><strong><em>214 897 279</em></strong></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque nemo, facilis earum blanditiis optio ipsum ratione! Ratione voluptates maiores architecto, quasi reprehenderit et, inventore deleniti maxime magnam molestiae excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque nemo, facilis earum blanditiis optio ipsum ratione! Ratione voluptates maiores architecto, quasi reprehenderit et, inventore deleniti maxime magnam molestiae excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque nemo, facilis earum blanditiis optio ipsum ratione! Ratione voluptates maiores architecto, quasi reprehenderit et, inventore deleniti maxime magnam molestiae excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque nemo, facilis earum blanditiis optio ipsum ratione! Ratione voluptates maiores architecto, quasi reprehenderit et, inventore deleniti maxime magnam molestiae excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque nemo, facilis earum blanditiis optio ipsum ratione! Ratione voluptates maiores architecto, quasi reprehenderit et, inventore deleniti maxime magnam molestiae excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque nemo, facilis earum blanditiis optio ipsum ratione! Ratione voluptates maiores architecto, quasi reprehenderit et, inventore deleniti maxime magnam molestiae excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque nemo, facilis earum blanditiis optio ipsum ratione! Ratione voluptates maiores architecto, quasi reprehenderit et, inventore deleniti maxime magnam molestiae excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque nemo, facilis earum blanditiis optio ipsum ratione! Ratione voluptates maiores architecto, quasi reprehenderit et, inventore deleniti maxime magnam molestiae excepturi!</p>
 </body>
 </html>

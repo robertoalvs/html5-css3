@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+h1 {
+
+    font-variant: small-caps;
+    text-align: center;
+}
+
+caption {
+
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+thead, th {
+
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+thead > tr > th {
+
+    position: sticky;
+    top: -1px;
+    background-color: lightgrey;
+}
+
+table {
+        width: 500px;
+        height: 150px;
+        border-collapse: collapse;
+        margin: auto;
+        box-shadow: 2px 2px 13px 0px black;
+        position: relative;
+}
+
+tbody tr:nth-child(odd) {
+
+    background-color: lightgrey;
+}
+
+tr, td {
+
+    border: 1px solid black;
+}
+
+.num {
+
+    text-align: right;
+}
+
+#sp {
+
+    background-image: linear-gradient(to right, black, white);
+}
+
+#sp:hover {
+
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+#pb:hover {
+
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+
+#pb {
+
+    background-image: linear-gradient(to right, black, red, white);
+} 
+
+a {
+
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.numfoot {
+
+    text-align: end;
+    background-color: rgba(216, 167, 108, 0.507);
+    padding-right: 5px;
+}
