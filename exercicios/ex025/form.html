@@ -5,16 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fomulário</title>
+    <style>
+
+        form .botaoenviar {
+
+            background-color: pink;
+            padding: 5px;
+            width: 100px;
+        }
+
+        form .caixanome {
+
+            background-color: bisque;
+            border-radius: 3px;
+            box-shadow: 2px 2px 5px black;
+        }
+    </style>
 </head>
 <body>
     
         <h1>Meu Primeiro Formulário</h1>
 
-        <form>
+        <form action="cadastro.php" method="post">
 
-            <p>Nome: <input type="text" name="nome" id="nome"> </p>
-            <p>Sobrenome: <input type="text" name="nome" id="nome"> </p>
-            <p> <input type="submit" value="Enviar"> </p>
+            <p><label for="inome">Nome:</label> 
+            <input class="caixanome" type="text" name="nome" id="inome"> </p>
+
+            <p><label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome"> </p>
+
+            <p> <input class="botaoenviar" type="submit" value="Enviar"> </p>
         </form>
 </body>
 </html>
