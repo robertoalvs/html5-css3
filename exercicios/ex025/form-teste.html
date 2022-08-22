@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando </title>
+    <style>
+
+        div#nome .name {
+            background-color: red;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        div#nome .name:hover {
+
+            text-transform: uppercase;
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <h1>Fomulário</h1>
@@ -15,16 +27,48 @@
 
             <div id="nome">
                 <label for="iname">Nome:</label>
-                <input type="text" name="name" id="iname" required placeholder="Digite seu nome" size="30" minlength="5" maxlength="30" autocomplete="name">
+                <input class="name" type="text" name="name" id="iname" required placeholder="Digite seu nome" size="30" minlength="5" maxlength="30" autocomplete="name">
             </div>
+
+            <br>
 
             <div id="email">
-
                 <label for="iemail">Email:</label>
-                <input type="email" name="email" id="iemail" required placeholder="Digite seu Email" autocomplete="email">
+                <input type="email" name="email" id="iemail" required placeholder="Digite seu Email" autocomplete="email" size="40">
             </div>
-            
+
+            <br>
+
+                <div id="telefone">
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" required placeholder="(xx) xxxx-xxxx" max="11" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" autocomplete="tel">
+
+                </div>
+
+            <br>
+
+                <div id="data">
+                    <label for="idate">Data:</label>
+                    <input type="date" name="date" id="idate" required>
+                </div>
+                
+                <br>
+
+                <div id="mes">
+                    <label for="imonth">Mês:</label>
+                    <input type="month" name="month" id="imonth" required placeholder="2022-08">
+                </div>
+
+                <br>
+
+                <div id="hora">
+                    <label for="itime">Hora:</label>
+                    <input type="time" name="time" id="itime" required>
+                </div>
         </fieldset>
+
+                  <input type="submit" value="ENVIAR">
+                  <input type="reset" value="LIMPAR">
     </form>
 </body>
 </html>
