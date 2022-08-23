@@ -13,6 +13,7 @@ body {
     width: 600px;
     height: 100vh;
     margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
         h1 {
@@ -65,7 +66,7 @@ body {
         }
         div#email {
 
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
 
         div#checkbox .excelente {
@@ -93,6 +94,25 @@ body {
         div#radio .avaliacao{
 
             margin-bottom: 7px;
+        }
+
+        div#radio {
+
+            margin-bottom: 20px;
+        }
+
+       div#comentario .text {
+
+            width: 600px;
+            height: 100px;
+            padding: 10px;
+            box-shadow: 2px 2px 2px rgba(84, 201, 244, 0.726);
+            border: 1px solid rgba(84, 201, 244, 0.726);
+            border-radius: 5px;
+            margin-bottom: 30px;
+            text-align: top justify;
+            text-transform: none;
+            
         }
     </style>
     
@@ -132,18 +152,35 @@ body {
         <br>
 
         <div id="radio">
-            <legend>Quem é o melhor do Grupo Elite?</legend>
+
+            <legend class="leg">Qual é, o melhor do Grupo Elite?</legend>
 
             
-            <label class="avaliacao" for="iexcel"><input  type="radio" name="avali" id="irsa">RSA_PcGamer</label>
-            <label class="avaliacao" for="imbom"><input  type="radio" name="avali" id="imarc">MarceloRJ </label>
-            <label class="avaliacao" for="ibom"><input  type="radio" name="avali" id="ipadin">PadinCisso </label>
-            <label class="avaliacao" for="ijus"><input  type="radio" name="avali" id="idiego">Diego Italo</label>
-            <label class="avaliacao" for="iruin"><input  type="radio" name="avali" id="iryu">RyuSupremo </label>
-            <label class="avaliacao" for="iruin"><input  type="radio" name="avali" id="ipixa">Pixa-in </label>
-            <label class="avaliacao" for="iruin"><input  type="radio" name="avali" id="itudo">Tudo Noia </label>
-            <label class="avaliacao" for="iruin"><input  type="radio" name="avali" id="inen">Nenhum </label>
+            <label class="avaliacao" for="iexcel"><input  type="radio" name="avali" id="irsa" required>RSA_PcGamer</label>
+            <label class="avaliacao" for="imbom"><input  type="radio" name="avali" id="imarc"required >MarceloRJ </label>
+            <label class="avaliacao" for="ibom"><input  type="radio" name="avali" id="ipadin"required >PadinCisso </label>
+            <label class="avaliacao" for="ijus"><input  type="radio" name="avali" id="idiego"required >Diego Italo</label>
+            <label class="avaliacao" for="iruin"><input  type="radio" name="avali" id="iryu"required >RyuSupremo </label>
+            <label class="avaliacao" for="iruin"><input  type="radio" name="avali" id="ipixa"required >Pixa-in </label>
+            <label class="avaliacao" for="iruin"><input  type="radio" name="avali" id="itudo"required >Tudo Noia </label>
+            <label class="avaliacao" for="iruin"><input  type="radio" name="avali" id="inen"required >Nenhum </label>
         </div>
+
+            <br>
+
+            <div id="comentario">
+
+
+            <label for="icoment"></label>
+            <legend>Deixe seu comentário</legend>
+
+            <input class="text" type="text" name="coment" id="icoment" maxlength="1000" autocomplete="on" placeholder="Insira seu texto aqui">
+
+            </div>
+
+            
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Limpar">
         </form>
 </body>
 </html>
