@@ -5,6 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando </title>
+
+    <style>
+
+body {
+
+    width: 600px;
+    height: 100vh;
+    margin: auto;
+}
+
+        h1 {
+
+            text-align: center;
+        }
+
+        p {
+
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        div#nome .text {
+
+            width: 600px;
+            padding: 10px;
+            box-shadow: 2px 2px 2px rgba(84, 201, 244, 0.726);
+            border: 1px solid rgba(84, 201, 244, 0.726);
+            border-radius: 5px;
+        
+        }
+
+        div#nome {
+
+            padding-bottom: 20px;
+        }
+
+        div#sobrenome .text {
+
+            width: 600px;
+            padding: 10px;
+            box-shadow: 2px 2px 2px rgba(84, 201, 244, 0.726);
+            border: 1px solid rgba(84, 201, 244, 0.726);
+            border-radius: 5px;
+        }
+
+        div#sobrenome {
+
+            padding-bottom: 20px;
+        }
+
+         div#email .text {
+
+            width: 600px;
+            padding: 10px;
+            box-shadow: 2px 2px 2px rgba(84, 201, 244, 0.726);
+            border: 1px solid rgba(84, 201, 244, 0.726);
+            border-radius: 5px;
+        }
+        div#email {
+
+            padding-bottom: 20px;
+        }
+
+        div#checkbox .excelente {
+
+            width: 600px;
+            padding: 10px;
+            box-shadow: 2px 2px 2px rgba(84, 201, 244, 0.726);
+            border: 1px solid rgba(84, 201, 244, 0.726);
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        div#radio .avaliacao {
+
+            display: block;
+            width: 600px;
+            padding: 10px;
+            border: transparent;
+            border-radius: 5px;
+            background-color: rgb(217, 247, 253);
+            display: inline-block;
+
+        }
+
+        div#radio .avaliacao{
+
+            margin-bottom: 7px;
+        }
+    </style>
     
 </head>
 <body>
@@ -16,16 +106,41 @@
         <form action="cadastro.php" method="post" autocomplete="on">
 
             <div id="nome">
-                
-                <p>Nome</p>
-                <fieldset>
 
+                    <legend>Nome</legend>
                     <label for="inome"></label>
-                    <input type="text" name="nome" id="inome" autocomplete="on" placeholder="Insira seu nome">
-
-                </fieldset>
+                    <input class="text" type="text" name="nome" id="inome" autocomplete="on" placeholder="Insira seu nome" maxlength="100" required>
             </div>
+
+            <br>
+
+            <div id="sobrenome">
+
+                <legend>Sobrenome</legend>
+                <label for="isobre"></label>
+                <input class="text" type="text" name="sobre" id="isobrenome" autocomplete="on" placeholder="Insira seu sobrenome" maxlength="100" required>
+        </div>
+
+            <br>
+
+        <div id="email">
+
+            <legend>Email</legend>
+            <label for="iemail"></label>
+            <input class="text" type="email" name="email" id="iemail" required maxlength="60" autocomplete="on" placeholder="Insira seu email">
+        </div> 
+        <br>
+
+        <div id="radio">
+            <legend>Como você avalia nossos serviços?</legend>
+
             
+            <label class="avaliacao" for="iexcel"><input  type="radio" name="avali" id="iexcel">Excelente</label>
+            <label class="avaliacao" for="imbom"><input  type="radio" name="avali" id="imbom">Muito Bom </label>
+            <label class="avaliacao" for="ibom"><input  type="radio" name="avali" id="ibom">Bom </label>
+            <label class="avaliacao" for="ijus"><input  type="radio" name="avali" id="ijus">Justo</label>
+            <label class="avaliacao" for="iruin"><input  type="radio" name="avali" id="iruin">Ruin </label>
+        </div>
         </form>
 </body>
 </html>
