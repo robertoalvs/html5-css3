@@ -5,70 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando </title>
-    <style>
-
-        div#nome .name {
-            background-color: red;
-            box-shadow: 2px 2px 2px 2px black;
-        }
-        div#nome .name:hover {
-
-            text-transform: uppercase;
-            background-color: aqua;
-        }
-    </style>
+    
 </head>
 <body>
-    <h1>Fomulário</h1>
 
-    <form action="cadastro.php" method="post">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
+        <h1>FeedBack do Cliente 2</h1>
+
+        <p>Adorariamos saber mais sobre sua experiência como cliente. Sinta-se à vontade para compartilhar sugestões, ideias e oque mais achar relevante.</p>
+        
+        <form action="cadastro.php" method="post" autocomplete="on">
 
             <div id="nome">
-                <label for="iname">Nome:</label>
-                <input class="name" type="text" name="name" id="iname" required placeholder="Digite seu nome" size="30" minlength="5" maxlength="30" autocomplete="name">
-            </div>
-
-            <br>
-
-            <div id="email">
-                <label for="iemail">Email:</label>
-                <input type="email" name="email" id="iemail" required placeholder="Digite seu Email" autocomplete="email" size="40">
-            </div>
-
-            <br>
-
-                <div id="telefone">
-                    <label for="itel">Telefone:</label>
-                    <input type="tel" name="tel" id="itel" required placeholder="(xx) xxxx-xxxx" max="11" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" autocomplete="tel">
-
-                </div>
-
-            <br>
-
-                <div id="data">
-                    <label for="idate">Data:</label>
-                    <input type="date" name="date" id="idate" required>
-                </div>
                 
-                <br>
+                <p>Nome</p>
+                <fieldset>
 
-                <div id="mes">
-                    <label for="imonth">Mês:</label>
-                    <input type="month" name="month" id="imonth" required placeholder="2022-08">
-                </div>
+                    <label for="inome"></label>
+                    <input type="text" name="nome" id="inome" autocomplete="on" placeholder="Insira seu nome">
 
-                <br>
-
-                <div id="hora">
-                    <label for="itime">Hora:</label>
-                    <input type="time" name="time" id="itime" required>
-                </div>
-        </fieldset>
-
-                  <input type="submit" value="ENVIAR">
-                  <input type="reset" value="LIMPAR">
-    </form>
+                </fieldset>
+            </div>
+            
+        </form>
 </body>
 </html>
