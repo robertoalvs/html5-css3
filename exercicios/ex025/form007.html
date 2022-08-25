@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Tags para formulário fora de INPUT - SELECT - DATALIST - TEXTAREA</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+
+        <div id="select">
+
+            <label for="iest">Estados</label>
+
+            <select name="est" id="iest">
+
+                <option value="" selected>----- Escolha -----</option>
+                <optgroup label="Região Norte">
+                    <option value="">Amazonas</option>
+                    <option value="">Roraima</option>
+                    <option value="">Amapá</option>
+                    <option value="">Pará</option>
+                    <option value="">Rondônia</option>
+                    <option value="">Acre</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="">Maranhão</option>
+                    <option value="">Piauí</option>
+                    <option value="">Ceará</option>
+                    <option value="">Rio Grande do Norte</option>
+                    <option value="">Pernambuco</option>
+                    <option value="">Paraíba</option>
+                    <option value="">Sergipe</option>
+                    <option value="">Alagoas</option>
+                    <option value="">Bahia</option>
+                </optgroup>
+
+                <optgroup label="Região Centro-Oeste">
+                    <option value="">Mato Grosso</option>
+                    <option value="">Mato Grosso do Sul</option>
+                    <option value="">Goiás</option>
+                </optgroup>
+
+                <optgroup label="Região Sudeste">
+                    <option value="">São Paulo</option>
+                    <option value="">Rio de Janeiro</option>
+                    <option value="">Espírito Santo</option>
+                    <option value="">Minas Gerais</option>
+                </optgroup> 
+
+                <optgroup label="Região Sul">
+                    <option value="">Paraná</option>
+                    <option value="">Rio Grande do Sul</option>
+                    <option value="">Santa Catarina</option>
+                </optgroup>               
+
+            </select>
+        </div>
+    </form>
+    
+</body>
+</html>
