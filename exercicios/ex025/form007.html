@@ -16,7 +16,7 @@
 
             <label for="iest">Estados</label>
 
-            <select name="est" id="iest">
+            <select name="est" id="iest" required>
 
                 <option value="" selected>----- Escolha -----</option>
                 <optgroup label="Região Norte">
@@ -66,7 +66,7 @@
 
         <div>
                 <label for="iprof">Profissão</label>
-                <input type="text" name="prof" id="iprof" list="lstprof">
+                <input type="text" name="prof" id="iprof" list="lstprof" autocomplete="on" required>
 
                 <datalist id="lstprof">
 
@@ -76,7 +76,20 @@
                 </datalist>
         </div>
 
+        <br>
 
+        <div id="textarea">
+
+            <label for="itex">Mensagem</label><br>
+            <textarea name="tex" id="itex" cols="30" rows="10" placeholder="Digite aqui seu mensagem"></textarea>
+
+        </div>
+
+        <br>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
     </form>
     
 </body>
