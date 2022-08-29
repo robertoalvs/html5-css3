@@ -1,0 +1,32 @@
+@charset "UTF-8";
+* {
+
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Estilo para impressoras */
+
+html {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+
+    display: none;
+}
+
+article::after { /* Queremos dizer com article::after --- Que (DEPOIS - AFTER) da TAG Article, teremos 
+alguma coisa */
+
+    content: 'Esse artigo foi inprssora através do site www.cursoemvideo.com';
+
+}
+
+article {
+
+    width: 100%;
+}
